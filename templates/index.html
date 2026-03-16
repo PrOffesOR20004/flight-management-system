@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <title>Book a Flight</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/flights">Flights</a>
+        <a href="/index">Book a Flight</a>
+    </div>
+
+    <form method="POST" action="/index">
+        <h1>Book Your Flight</h1>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="date" name="date" required>
+        <input type="text" name="source" placeholder="Source City" required>
+        <input type="text" name="destination" placeholder="Destination City" required>
+        <input type="submit" value="Book Now">
+    </form>
+
+    <footer>
+        &copy; 2025 Flight Booking System. All rights reserved.
+    </footer>
+</body>
+</html>
